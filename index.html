@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="title">Hole in 1</title>
+    <link rel="icon" href="pics/logo.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <meta name="description" content="Golf Resort in Portugal">
+    <meta name="keywords" content="Golf, Resort, Golf Resort, Portugal, Fun">
+</head>
+<body style="font-family: playfair;" id="body">
+    <div class="menuPage" id="menuPage">
+        <div class="buttonBox" id="buttonBox">
+            <input class="menuPageX" title="Close" type="image" src="pics/buttons/x.png" alt="Close Button" onclick="closeMenuPage()"/>
+        </div>
+        <div class="menuContainerOut">
+            <div class="menuContainerIn" id="menuContainerIn">
+                <div class="menuContent">
+                    <h2 class="menuTitle" id="menuFacilities" onclick="window.location.href = 'html/facilities.html';">Facilities</h2>
+                    <a id="golfcourts" href="html/facilities.html#golfcourtsFacility">Golf courts</a>
+                    <div class="menuLineh"></div>
+                    <a id="clubs" href="html/facilities.html#gymsFacility">Clubs</a>
+                    <div class="menuLineh"></div>
+                    <a id="hotels" href="html/facilities.html#hotelsFacility">Hotels</a>
+                    <div class="menuLineh"></div>
+                    <a id="rac" href="html/facilities.html#racFacility">Restaurants and cafes</a>
+                    <div class="menuLineh"></div>
+                    <a id="store" href="html/facilities.html#storeFacility">Professionals store</a>
+                    <div class="menuLineh"></div>
+                    <a id="otheractivities" href="html/facilities.html#otherFacility">Other activities</a>
+                </div>
+                <div class="menuContent">
+                    <h2 class="menuTitle" id="menuPackages" onclick="window.location.href = 'html/packages.html';">Packages</h2>
+                    <a id="fiverounds" href="html/packages.html#fiveroundsDiv">Five rounds</a>
+                    <div class="menuLineh"></div>
+                    <a id="tripletee" href="html/packages.html#tripleteeDiv">Triple tee</a>
+                    <div class="menuLineh"></div>
+                    <a id="recreationbreak" href="html/packages.html#recreationbreakDiv">Recreation break</a>
+                    <div class="menuLineh"></div>
+                    <a id="custompackages" href="html/packages.html#custompackagesDiv">Custom packages</a>
+                </div>
+                <div class="menuContent">
+                    <h2 class="menuTitle" id="menuContactus" onclick="window.location.href = 'html/contactus.html';">Contact us</h2>
+                    <a id="aboutus" href="html/contactus.html#aboutusDiv">About us</a>
+                    <div class="menuLineh"></div>
+                    <a id="why" href="html/contactus.html#whyDiv">Why choose us?</a>
+                    <div class="menuLineh"></div>
+                    <a id="details" href="html/contactus.html#contactBox">Contact details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: block;" id="everything">
+        <div class="header">
+            <div class="boxLeft" id="boxLeft">
+                <input class="langButton" title="Choose Language" type="image" src="pics/buttons/lang.png" onclick="langlistswitch()" alt="Language Button"/>
+                
+                <div class="langlist" id="langlist">
+                    <div class="lang" onclick="changelang('english');langEng()">
+                        <img src="pics/lang/us.png" class="langimg">
+                        <p class="langtext">English</p>
+                    </div>
+                    <div class="lang" onclick="changelang('arabic');langAr()">
+                        <img src="pics/lang/jo.png" class="langimg">
+                        <p class="langtext">العربية</p>
+                    </div>
+                    <div class="lang" onclick="changelang('port');langPor()">
+                        <img src="pics/lang/port.png" class="langimg">
+                        <p class="langtext">Português</p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="boxMiddle" id="boxMiddle">
+                <img class="logo" src="pics/logo.png" height="100vw" alt="Logo" title="Go to Homepage">
+                <p class="headertitle" id="headerTitle">Hole in 1 <br> Golf resort</p>
+            </div>
+
+            <div class="boxRight" id="boxRight">
+                <input class="menuButton" title="Menu" type="image" src="pics/buttons/menu.png" alt="Menu Button" onclick="openMenuPage()"/>
+            </div>
+        </div>
+
+        <div class="start">
+            <h1 id="startTitle">Hole in 1</h1>
+            <h2 id="startText">Golf Resort</h2>
+        </div>
+
+        <div class="pages" id="pages">
+            <div class="page" onclick="window.location.href = 'html/facilities.html';">
+                <p class="pagetitle" id="facilitiesTitle">Facilities</p>
+                <img src="pics/cover/index/facilities.jpg" class="pageimg" alt="Cover Picture" title="Visit facilities page">
+                <p class="pagebio" id="facilitiesBio">See the activites we offer</p>
+            </div>
+            <div class="page" onclick="window.location.href = 'html/packages.html';">
+                <p class="pagetitle" id="packagesTitle">Packages</p>
+                <img src="pics/cover/index/packages.jpg" class="pageimg" alt="Cover Picture" title="Visit facilities page">
+                <p class="pagebio" id="packagesBio">Take a look at our offers</p>
+            </div>
+            <div class="page" onclick="window.location.href = 'html/contactus.html';">
+                <p class="pagetitle" id="contactusTitle">Contact us</p>
+                <img src="pics/cover/index/contactus.jpg" class="pageimg" alt="Cover Picture" title="Visit facilities page">
+                <p class="pagebio" id="contactusBio">Learn about and contact us</p>
+            </div>
+        </div>
+        <div class="footerContainer">
+            <div class="footerContent">
+                <h1 class="footerTitle" id="footerTitle">Designed and programmed by:</h1>
+                <h1 class="footerText" id="footerText">Ayham J.</h1>
+            </div>
+            <div class="footerLine"></div>
+            <div class="footerContent">
+                <h1 class="footerText" id="goal">This website was devolped and built to meet the requirments for passing the 'Websites Development' chapter in 11th grade, I.T. major.</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/index.js" defer></script>
+<script src="js/main.js" defer></script>
+
+</html>
+<!--Made by Ayham Jaradat-->

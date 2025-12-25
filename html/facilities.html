@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="title">Hole in 1 | Facilities</title>
+    <link rel="icon" href="../pics/logo.png">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/facilities.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+</head>
+<body style="font-family: playfair;" id="body">
+    <div class="menuPage" id="menuPage">
+        <div class="buttonBox" id="buttonBox">
+            <input class="menuPageX" title="Close" type="image" src="../pics/buttons/x.png" alt="Close Button" onclick="closeMenuPage()"/>
+        </div>
+        <div class="menuContainerOut">
+            <div class="menuContainerIn" id="menuContainerIn">
+                <div class="menuContent">
+                    <h2 class="menuTitle" id="menuFacilities" onclick="window.location.href = 'facilities.html';">Facilities</h2>
+                    <a id="golfcourts" href="#golfcourtsFacility" onclick="closeMenuPage()">Golf courts</a>
+                    <div class="menuLineh"></div>
+                    <a id="clubs" href="#gymsFacility" onclick="closeMenuPage()">Clubs</a>
+                    <div class="menuLineh"></div>
+                    <a id="hotels" href="#hotelsFacility" onclick="closeMenuPage()">Hotels</a>
+                    <div class="menuLineh"></div>
+                    <a id="rac" href="#racFacility" onclick="closeMenuPage()">Restaurants and cafes</a>
+                    <div class="menuLineh"></div>
+                    <a id="store" href="#storeFacility" onclick="closeMenuPage()">Professionals store</a>
+                    <div class="menuLineh"></div>
+                    <a id="otheractivities" href="#otherFacility" onclick="closeMenuPage()">Other activities</a>
+                </div>
+                <div class="menuContent">
+                    <h2 class="menuTitle" id="menuPackages" onclick="window.location.href = 'packages.html';">Packages</h2>
+                    <a id="fiverounds" href="packages.html#fiveroundsDiv">Five rounds</a>
+                    <div class="menuLineh"></div>
+                    <a id="tripletee" href="packages.html#tripleteeDiv">Triple tee</a>
+                    <div class="menuLineh"></div>
+                    <a id="recreationbreak" href="packages.html#recreationbreakDiv">Recreation break</a>
+                    <div class="menuLineh"></div>
+                    <a id="custompackages" href="packages.html#custompackagesDiv">Custom packages</a>
+                </div>
+                <div class="menuContent">
+                    <h2 class="menuTitle" id="menuContactus" onclick="window.location.href = 'contactus.html';">Contact us</h2>
+                    <a id="aboutus" href="contactus.html#aboutusDiv">About us</a>
+                    <div class="menuLineh"></div>
+                    <a id="why" href="contactus.html#whyDiv">Why choose us?</a>
+                    <div class="menuLineh"></div>
+                    <a id="details" href="contactus.html#contactBox">Contact details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: block;" id="everything">
+        <div class="header">
+            <div class="boxLeft" id="boxLeft">
+                <input class="langButton" title="Choose Language" type="image" src="../pics/buttons/lang.png" onclick="langlistswitch()" alt="Language Button"/>
+                
+                <div class="langlist" id="langlist">
+                    <div class="lang" onclick="changelang('english');langEng()">
+                        <img src="../pics/lang/us.png" class="langimg">
+                        <p class="langtext">English</p>
+                    </div>
+                    <div class="lang" onclick="changelang('arabic');langAr()">
+                        <img src="../pics/lang/jo.png" class="langimg">
+                        <p class="langtext">العربية</p>
+                    </div>
+                    <div class="lang" onclick="changelang('port');langPor()">
+                        <img src="../pics/lang/port.png" class="langimg">
+                        <p class="langtext">Português</p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="boxMiddle" id="boxMiddle">
+                <img class="logo" src="../pics/logo.png" height="100vw" alt="Logo" title="Go to Homepage" onclick="window.location.href = '../index.html';">
+                <p class="headertitle" id="headerTitle">Hole in 1 <br> Facilities</p>
+            </div>
+
+            <div class="boxRight" id="boxRight">
+                <input class="menuButton" title="Menu" type="image" src="../pics/buttons/menu.png" alt="Menu Button" onclick="openMenuPage()"/>
+            </div>
+        </div>
+
+        <div class="start">
+            <h1 id="startTitle">Facilities</h1>
+            <h2 id="startText">The places and activities in our resort</h2>
+        </div>
+
+        <div class="facilityContainerGolfcourts" id="golfcourtsFacility">
+            <div class="facilityCardRight">
+                <p class="facilityTitle" id="golfcourtsTitle">Golf courts</p>
+                <p class="facilityText" id="golfcourtsText">We have 3 courts for golf competitions, Including the very well-known "Sea view" golf court!</p>
+            </div>
+            <div class="facilityCardUnderRight"></div>
+        </div>
+
+        <div class="facilityContainerGyms" id="gymsFacility">
+            <div class="facilityCardLeft">
+                <p class="facilityTitle" id="gymsTitle">Gyms</p>
+                <p class="facilityText" id="gymsText">We have 2 gyms with the newest and most recent equipments and machines</p>
+            </div>
+            <div class="facilityCardUnderLeft"></div>
+        </div>
+
+        <div class="facilityContainerHotels" id="hotelsFacility">
+            <div class="facilityCardRight">
+                <p class="facilityTitle" id="hotelsTitle">Hotels</p>
+                <p class="facilityText" id="hotelsText">We offer you rooms in some of the best hotels in Portugal</p>
+            </div>
+            <div class="facilityCardUnderRight"></div>
+        </div>
+
+        <div class="facilityContainerRac" id="racFacility">
+            <div class="facilityCardLeft">
+                <p class="facilityTitle" id="racTitle">Restaurants and cafes</p>
+                <p class="facilityText" id="racText">Enjoy delicious food and drinks in our top notch restaurants and cafes</p>
+            </div>
+            <div class="facilityCardUnderLeft"></div>
+        </div>
+
+        <div class="facilityContainerStore" id="storeFacility">
+            <div class="facilityCardRight">
+                <p class="facilityTitle" id="storeTitle">Store</p>
+                <p class="facilityText" id="storeText">Looking for somewhere to buy golf equipment? here it is</p>
+            </div>
+            <div class="facilityCardUnderRight"></div>
+        </div>
+
+        <div class="facilityContainerOther" id="otherFacility">
+            <p class="facilityTitle" id="otherTitle">Other activities</p>
+            <p class="facilityText" id="otherText1">1-A training ground illuminated by scout lights.</p>
+            <p class="facilityText" id="otherText2">2-Golf lessons.</p>
+            <p class="facilityText" id="otherText3">3-Digital training.</p>
+            <p class="facilityText" id="otherText4">4-Assistance service for carrying golf equipment.</p>
+        </div>
+
+        <div class="footerContainer">
+            <div class="footerContent">
+                <h1 class="footerTitle" id="footerTitle">Designed and programmed by:</h1>
+                <h1 class="footerText" id="footerText">Ayham J.</h1>
+            </div>
+            <div class="footerLine"></div>
+            <div class="footerContent">
+                <h1 class="footerText" id="goal">This website was devolped and built to meet the requirments for passing the 'Websites Development' chapter in 11th grade, I.T. major.</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../js/facilities.js" defer></script>
+<script src="../js/main.js" defer></script>
+
+</html>
+<!--Made by Ayham Jaradat-->

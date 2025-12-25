@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="title">Hole in 1 | Packages</title>
+    <link rel="icon" href="../pics/logo.png">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/packages.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+</head>
+<body style="font-family: playfair;" id="body">
+    <div class="menuPage" id="menuPage">
+        <div class="buttonBox" id="buttonBox">
+            <input class="menuPageX" title="Close" type="image" src="../pics/buttons/x.png" alt="Close Button" onclick="closeMenuPage()"/>
+        </div>
+        <div class="menuContainerOut">
+            <div class="menuContainerIn" id="menuContainerIn">
+                <div class="menuContent">
+                    <h2 class="menuTitle" id="menuFacilities" onclick="window.location.href = 'html/facilities.html';">Facilities</h2>
+                    <a id="golfcourts" href="facilities.html#golfcourtsFacility">Golf courts</a>
+                    <div class="menuLineh"></div>
+                    <a id="clubs" href="facilities.html#gymsFacility">Clubs</a>
+                    <div class="menuLineh"></div>
+                    <a id="hotels" href="facilities.html#hotelsFacility">Hotels</a>
+                    <div class="menuLineh"></div>
+                    <a id="rac" href="facilities.html#racFacility">Restaurants and cafes</a>
+                    <div class="menuLineh"></div>
+                    <a id="store" href="facilities.html#storeFacility">Professionals store</a>
+                    <div class="menuLineh"></div>
+                    <a id="otheractivities" href="facilities.html#otherFacility">Other activities</a>
+                </div>
+                <div class="menuContent">
+                    <h2 class="menuTitle" id="menuPackages" onclick="window.location.href = 'packages.html';">Packages</h2>
+                    <a id="fiverounds" href="#fiveroundsDiv" onclick="closeMenuPage()">Five rounds</a>
+                    <div class="menuLineh"></div>
+                    <a id="tripletee" href="#tripleteeDiv" onclick="closeMenuPage()">Triple tee</a>
+                    <div class="menuLineh"></div>
+                    <a id="recreationbreak" href="#recreationbreakDiv" onclick="closeMenuPage()">Recreation break</a>
+                    <div class="menuLineh"></div>
+                    <a id="custompackages" href="#custompackagesDiv" onclick="closeMenuPage()">Custom packages</a>
+                </div>
+                <div class="menuContent">
+                    <h2 class="menuTitle" id="menuContactus" onclick="window.location.href = 'contactus.html';">Contact us</h2>
+                    <a id="aboutus" href="contactus.html#aboutusDiv">About us</a>
+                    <div class="menuLineh"></div>
+                    <a id="why" href="contactus.html#whyDiv">Why choose us?</a>
+                    <div class="menuLineh"></div>
+                    <a id="details" href="contactus.html#contactBox">Contact details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: block;" id="everything">
+        <div class="header">
+            <div class="boxLeft" id="boxLeft">
+                <input class="langButton" title="Choose Language" type="image" src="../pics/buttons/lang.png" onclick="langlistswitch()" alt="Language Button"/>
+                
+                <div class="langlist" id="langlist">
+                    <div class="lang" onclick="changelang('english');langEng()">
+                        <img src="../pics/lang/us.png" class="langimg">
+                        <p class="langtext">English</p>
+                    </div>
+                    <div class="lang" onclick="changelang('arabic');langAr()">
+                        <img src="../pics/lang/jo.png" class="langimg">
+                        <p class="langtext">العربية</p>
+                    </div>
+                    <div class="lang" onclick="changelang('port');langPor()">
+                        <img src="../pics/lang/port.png" class="langimg">
+                        <p class="langtext">Português</p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="boxMiddle" id="boxMiddle">
+                <img class="logo" src="../pics/logo.png" height="100vw" alt="Logo" title="Go to Homepage" onclick="window.location.href = '../index.html';">
+                <p class="headertitle" id="headerTitle">Hole in 1 <br> Facilities</p>
+            </div>
+
+            <div class="boxRight" id="boxRight">
+                <input class="menuButton" title="Menu" type="image" src="../pics/buttons/menu.png" alt="Menu Button" onclick="openMenuPage()"/>
+            </div>
+        </div>
+
+        <div class="start">
+            <h1 id="startTitle">Packages</h1>
+            <h2 id="startText">Our packages and offers</h2>
+        </div>
+
+            <div class="facilityCardRight" id="fiveroundsDiv">
+                <p class="facilityTitle" id="golfcourtsTitle">Five rounds</p>
+                <p class="facilityText" id="golfcourtsText">
+                    ~Full accommodation for five nights in a luxury suite. <br>
+                    ~Five rounds 18 holes. <br>
+                    ~One guided tour at the famous 'Sea view' golf course. <br>
+                    ~Free digital training session.
+                </p>
+                <button onclick="book('Five rounds')" id="book1">Book</button>
+            </div>
+            <div class="facilityCardUnderRight"></div>
+
+            <div class="facilityCardLeft" id="tripleteeDiv">
+                <p class="facilityTitle" id="gymsTitle">Triple tee</p>
+                <p class="facilityText" id="gymsText">
+                    ~Two-night stay in a double room with breakfast included. <br>
+                    ~Three rounds 18 holes, including one guided tour at the famous 'Sea view' golf course (if available).<br>
+                    ~Free gift for participants.<br>
+                    ~20% discount at the shop.
+                </p>
+                <button onclick="book('Triple tee')" id="book2">Book</button>
+            </div>
+            <div class="facilityCardUnderLeft"></div>
+
+            <div class="facilityCardRight" id="recreationbreakDiv">
+                <p class="facilityTitle" id="hotelsTitle">Recreation break</p>
+                <p class="facilityText" id="hotelsText">
+                    ~One-night stay with a full breakfast.<br>
+                    ~Dinner at any of the resorts restaurants.<br>
+                    ~Access to the pools (fees apply, and the 'Sea view' golf course is excluded).<br>
+                    ~Free club rental.
+                </p>
+                <button onclick="book('Recreation break')" id="book3">Book</button>
+            </div>
+            <div class="facilityCardUnderRight"></div>
+
+        <div class="facilityContainerOther" id="custompackagesDiv">
+            <p class="facilityTitle" id="otherTitle">Custom packages</p>
+            <p class="facilityText" id="otherText1">Custom packages are available for corporate events and extended stays.</p>
+            <p class="facilityText" id="otherText2">You have to contact us to arrange any custom packages.</p>
+            <a class="facilityText" id="otherText3" style="color: blue; text-decoration: underline;" href="contactus.html#contactBox">Click here to go to our contact details</a>
+        </div>
+
+        <div class="footerContainer">
+            <div class="footerContent">
+                <h1 class="footerTitle" id="footerTitle">Designed and programmed by:</h1>
+                <h1 class="footerText" id="footerText">Ayham J.</h1>
+            </div>
+            <div class="footerLine"></div>
+            <div class="footerContent">
+                <h1 class="footerText" id="goal">This website was devolped and built to meet the requirments for passing the 'Websites Development' chapter in 11th grade, I.T. major.</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../js/packages.js" defer></script>
+<script src="../js/main.js" defer></script>
+
+</html>
+<!--Made by Ayham Jaradat-->
